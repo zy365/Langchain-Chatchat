@@ -144,10 +144,10 @@ class KBSettings(BaseFileSettings):
     CACHED_MEMO_VS_NUM: int = 10
     """缓存临时向量库数量（针对FAISS），用于文件对话"""
 
-    CHUNK_SIZE: int = 750
+    CHUNK_SIZE: int = 180
     """知识库中单段文本长度(不适用MarkdownHeaderTextSplitter)"""
 
-    OVERLAP_SIZE: int = 150
+    OVERLAP_SIZE: int = 30
     """知识库中相邻文本重合长度(不适用MarkdownHeaderTextSplitter)"""
 
     VECTOR_SEARCH_TOP_K: int = 3 # TODO: 与 tool 配置项重复
